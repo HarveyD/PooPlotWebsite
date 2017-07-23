@@ -21,11 +21,17 @@ html, body {
 h1 {
     margin:0px;
     padding: 0px;
+
+    font-size: 5rem;
+}
+
+P {
+    font-size: 1.5rem;
 }
 
 h3 {
-  margin: 0px;
-  padding: 0px;  
+    margin: 0px;
+    padding: 0px;  
 }
 
 .blade {
@@ -60,6 +66,11 @@ h3 {
     animation: bounce 3s infinite alternate;
 }
 
+.logo-container img{
+    max-width: 85% !important;
+    max-height: 85% !important;
+}
+
 .blade-text{
     width: 50%
 }
@@ -68,16 +79,11 @@ h3 {
     max-width: 45%;
 } 
 
-.logo-container img{
-    max-width: 85% !important;
-}
-
 .header {
-    height: 75vh;
+    height: 85vh;
 }
 
 .header h1{
-    font-size: 4rem;
     padding-bottom: 1rem;
 }
 
@@ -85,48 +91,24 @@ h3 {
     font-size: 2rem;
 }
 
-.main {
+.brown {
     background-color: #87766A;
     color: white;
 }
 
-.secondary {
+.white {
     margin-top: 0.5rem;
     background-color: white;
     color: #87766A;
-}
-
-.blade-main h1 {
-    font-size: 5rem;
-}
-
-.blade-main p {
-    font-size: 1.5rem;
 }
 
 .blade-secondary {
     flex-direction: row;
 }
 
-.blade-secondary h1{
-    font-size: 5rem;
-}
-
-.blade-secondary p{
-    font-size: 1.5rem;
-}
-
 /* SETTINGS */
 .blade-settings {
     flex-direction: column;
-}
-
-.blade-settings h1{
-    font-size: 5rem;
-}
-
-.blade-settings p{
-    font-size: 1.5rem;
 }
 
 .img-container{
@@ -161,6 +143,21 @@ h3 {
 
 /* MOBILE */
 @media screen and (max-width: 850px){
+
+    h1{
+        font-size: 3rem;
+    }
+
+    .header{
+        height: 100vh;
+    }
+    
+    .logo-container{
+        margin-top: 1rem;
+        width: 10rem;
+        height: 10rem
+    }
+
     .blade-secondary {
         flex-direction: column;
     }
